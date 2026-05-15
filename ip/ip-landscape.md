@@ -1,6 +1,8 @@
 # IP Landscape Skill
 
-> **How to install:** Drop this file into `~/.claude/commands/ip-landscape.md` (global — works in any project) or `.claude/commands/ip-landscape.md` (project-level). Then invoke with `/ip-landscape`.
+> **Install (global):** `cp ip/ip-landscape.md ~/.claude/commands/ip/ip-landscape.md`
+> **Install (project):** `cp ip/ip-landscape.md .claude/commands/ip/ip-landscape.md`
+> **Invoke:** `/ip:ip-landscape`
 >
 > **Author:** [abhikuchbhi.in](https://abhikuchbhi.in)
 
