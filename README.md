@@ -1,8 +1,7 @@
-# Operator Skills
+# Operator's Claude Skills
 
-A collection of custom AI slash commands (skills) built by a hands-on operator for running business workflows faster.
-
-Skills are single `.md` files that drop into your AI coding assistant's commands directory.
+A collection of custom claude skills built by a hands-on operator for running business workflows faster.
+Skills are single `.md` files that drop into your claude's commands directory.
 
 ---
 
