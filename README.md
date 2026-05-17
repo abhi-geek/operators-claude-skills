@@ -30,7 +30,7 @@ Then invoke in Claude with `/<category>:<skill>` (e.g., `/legal:nda-review`).
 
 | Skill | Invoke | Description |
 |-------|--------|-------------|
-| [nda-review](./legal/nda-review.md) | `/legal:nda-review` | Party-aware NDA analysis — surfaces red flags, non-standard terms, missing clauses, and jurisdiction-specific enforceability issues in a structured table |
+| [nda-review](./legal/nda-review.md) | `/nda-review` | Party-aware NDA analysis — surfaces red flags, non-standard terms, missing clauses, and jurisdiction-specific enforceability issues in a structured table |
 
 ### IP
 
