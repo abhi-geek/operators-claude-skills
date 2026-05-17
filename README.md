@@ -1,8 +1,8 @@
-# Claude Skills
+# Operator Skills
 
-A collection of custom slash commands (skills) for [Claude Code](https://claude.ai/code), built by a hands-on operator for running business workflows faster.
+A collection of custom AI slash commands (skills) built by a hands-on operator for running business workflows faster.
 
-Skills are single `.md` files. They work in **Claude Code (CLI)** and **Claude.ai (web/mobile)**.
+Skills are single `.md` files that drop into your AI coding assistant's commands directory.
 
 ---
 
@@ -14,7 +14,7 @@ Every new problem I take on comes with a set of hard, research-heavy sub-problem
 
 That's what this repo is. Every skill here started as a painful, manual task — something that required hours of research, cross-referencing, and domain knowledge to do well. I turned each one into a command so that the next time it comes up, for me or for anyone else, it takes minutes instead of days.
 
-I use Claude heavily across every part of my work. I believe in automating solved problems so I can stay focused on the ones that still need research, creativity, and judgment. These skills are that automation layer for the business and legal side of building deep-tech companies.
+I believe in automating solved problems so I can stay focused on the ones that still need research, creativity, and judgment. These skills are that automation layer for the business and legal side of building deep-tech companies.
 
 If you're building something hard and running into the same kinds of operational problems, I hope this saves you some time.
 
@@ -40,7 +40,7 @@ cp <category>/<skill>.md ~/.claude/commands/<category>/<skill>.md
 cp <category>/<skill>.md .claude/commands/<category>/<skill>.md
 ```
 
-Then invoke in Claude with `/<category>:<skill>` (e.g., `/legal:nda-review`).
+Then invoke with `/<category>:<skill>` (e.g., `/legal:nda-review`).
 
 ---
 
@@ -67,7 +67,6 @@ Then invoke in Claude with `/<category>:<skill>` (e.g., `/legal:nda-review`).
 **Abhishek** — Engineer and Operator for deep science problems.
 
 → [abhikuchbhi.in](https://abhikuchbhi.in)
-→ [The Operators — Substack](https://theoperators.substack.com/)
 
 ## License
 
