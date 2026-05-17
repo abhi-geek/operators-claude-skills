@@ -1,8 +1,8 @@
 # IP Landscape Skill
 
-> **Install (global):** `cp ip/ip-landscape.md ~/.claude/commands/ip/ip-landscape.md`
-> **Install (project):** `cp ip/ip-landscape.md .claude/commands/ip/ip-landscape.md`
-> **Invoke:** `/ip:ip-landscape`
+> **Install (global):** `cp intellectual-property/ip-landscape.md ~/.claude/commands/intellectual-property/ip-landscape.md`
+> **Install (project):** `cp intellectual-property/ip-landscape.md .claude/commands/intellectual-property/ip-landscape.md`
+> **Invoke:** `/intellectual-property:ip-landscape`
 >
 > **Author:** [abhikuchbhi.in](https://abhikuchbhi.in)
 
@@ -22,7 +22,7 @@ Ask the user all of the following in a single message before doing any work. Wai
 2. **Product / technology name** — the core technology being analyzed (e.g., "AcmeDB", "NanoSense", "VectorEngine")
 3. **Technology description** — 3-5 sentences: what it does, what problem it solves, what makes it novel
 4. **Home jurisdiction** — country where the company is registered (affects filing strategy, official fees, rebates, compliance rules)
-5. **Company profile** — choose one: Startup/MSME (<500 employees), Large Enterprise (>500), University/Research Institute, Individual Inventor
+5. **Company profile** — choose one: Startup/SME (<500 employees), Large Enterprise (>500), University/Research Institute, Individual Inventor
 6. **IP input format** — which do you have?
    - (a) A specification/tech document I can analyze
    - (b) An Excel/CSV/text list of inventions or features
@@ -809,10 +809,12 @@ For any items with an OSS gate (from Step 1):
 
 **Calculate estimated costs using these fee schedules:**
 
-**Home Jurisdiction Fee Schedules:**
+**Fee Schedule Reference Tables:**
 
-*India (IPO — as of 2024; apply MSME/startup 80% rebate if applicable):*
-| Action | MSME/Startup | Large Entity |
+> **Adapt to the user's home jurisdiction.** Present the home jurisdiction fee table first, followed by PCT and the user's key target jurisdictions. Show only the rows relevant to the filing strategy. Fee schedules below cover the four most common filing jurisdictions — if the user's home country is not listed, research current official fees from that country's patent office website and present them in the same format.
+
+*India (IPO — as of 2024; SME/startup 80% rebate applies if entity qualifies):*
+| Action | SME/Startup | Large Entity |
 |---|---|---|
 | Provisional application | ₹1,600 | ₹8,000 |
 | Complete specification (non-PCT) | ₹4,000 | ₹16,000 |
@@ -851,23 +853,28 @@ For any items with an OSS gate (from Step 1):
 *Attorney cost estimates (indicative; verify with local counsel):*
 | Activity | Estimated Cost (USD) |
 |---|---|
-| India provisional drafting (Indian firm) | $300–$800 |
-| PCT preparation (Indian/US firm) | $2,000–$5,000 |
+| Provisional patent drafting (local firm, home jurisdiction) | $300–$2,000 |
+| PCT preparation | $2,000–$5,000 |
 | US national phase prosecution (full) | $5,000–$15,000 |
 | EP prosecution (full) | €5,000–€15,000 |
 | Trademark filing (per jurisdiction) | $800–$2,500 |
 | Copyright registration batch | $50–$200 per work |
 
-**Cost offset and savings opportunities (check for each jurisdiction):**
+**Cost offset and savings opportunities:**
+
+> Show only the schemes applicable to the user's home jurisdiction and entity type. Do not list schemes from other jurisdictions unless the user is filing there.
+
 | Scheme | Jurisdiction | What it Offers |
 |---|---|---|
+| SME/Startup fee reduction | India (IPO) | 80% rebate on official fees for qualifying small entities |
 | TIFAC PFP (Patent Facilitation Programme) | India | Reimburses attorney fees up to ₹5L per PCT family |
 | Startup India – IPR Scheme | India | 80% rebate on IPO fees for DPIIT-registered startups |
-| MSME 80% rebate | India | Automatic 80% rebate on IPO official fees |
 | iDEX PRIME | India | Defence innovation funding (if defense-applicable) |
 | Section 115BBF Patent Box | India | 10% tax on patent royalties (vs 30% corporate rate) |
-| USPTO fee reduction | US | 60% reduction for small entity; 80% for micro entity |
-| EPO SME support | EU/EP | Fee reductions for SMEs in some EPC states |
+| Small/Micro Entity fee reduction | US (USPTO) | 60% reduction for small entity; 80% for micro entity |
+| SME support | EU/EP (EPO) | Fee reductions for SMEs in some EPC member states |
+| UK IPO SME support | UK | Reduced fees for small businesses; IP audit grant schemes available |
+| JPO SME support | Japan | Reduced official fees for small and medium enterprises |
 | Open Invention Network | Global | Free membership = protection from OIN member suits in Linux/OSS space |
 | LOT Network | Global | Free to join; protects against troll patent suits from other members |
 
@@ -1078,7 +1085,7 @@ Follow these rules throughout all steps:
 
 6. **Be conservative on FTO.** When in doubt between Clear and Watch, choose Watch. When in doubt between Watch and Conflict-Narrow, choose Conflict-Narrow. Overclaiming safety is worse than overclaiming risk.
 
-7. **Jurisdiction-specific details.** Adapt fee schedules, rebate calculations, and compliance requirements to the home jurisdiction provided in startup interview. For India: apply MSME/startup 80% rebate if applicable. For US: apply small/micro entity fees. For EU: apply EPO SME rules.
+7. **Jurisdiction-specific details.** Adapt fee schedules, rebate calculations, and compliance requirements to the home jurisdiction provided in the startup interview. For India: apply SME/startup 80% rebate if applicable. For US: apply small/micro entity fees. For EU/EP: apply EPO SME rules. For Japan: apply JPO SME reductions. For any other jurisdiction: look up current official fees from that country's patent office.
 
 8. **Step-end reporting.** At the end of each step, send user a brief summary: what was completed, key numbers, any blocking issues found, and confirm you are proceeding to next step.
 
