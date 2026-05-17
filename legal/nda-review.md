@@ -4,8 +4,6 @@
 > **Install (project):** `cp legal/nda-review.md .claude/commands/nda-review.md`
 > **Invoke:** `/nda-review` — attach the NDA file, paste the text, or pass a file path
 >
-> **Works in:** Claude Code (CLI) and Claude.ai (web/mobile/app)
->
 > **Author:** [abhikuchbhi.in](https://abhikuchbhi.in)
 
 ---

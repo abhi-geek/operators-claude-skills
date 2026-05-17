@@ -4,8 +4,6 @@
 > **Install (project):** `cp intellectual-property/trademark-clearance.md .claude/commands/intellectual-property/trademark-clearance.md`
 > **Invoke:** `/intellectual-property:trademark-clearance` — pass a name, or run with no arguments to be interviewed
 >
-> **Works in:** Claude Code (CLI) and Claude.ai (web/mobile/app)
->
 > **Author:** [abhikuchbhi.in](https://abhikuchbhi.in)
 
 ---

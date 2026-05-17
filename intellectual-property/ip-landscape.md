@@ -957,7 +957,7 @@ Create a professional, shareable report modeled on the Clairvolex structure:
 
 ```markdown
 # [Product Name] — IP Landscape Analysis
-**Prepared by:** [Company] Internal IP Team using Claude Code IP Landscape Skill
+**Prepared by:** [Company] Internal IP Team
 **Date:** [Date]
 **Classification:** [Confidential / Public]
 
